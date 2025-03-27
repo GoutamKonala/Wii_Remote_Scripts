@@ -1,0 +1,6 @@
+﻿mouse.DirectInputX = mouse.DirectInputX - 10*deadzone(wiimote.Left)
+mouse.DirectInputX = mouse.DirectInputX + 10*deadzone(wiimote.Right)
+mouse.DirectInputY = mouse.DirectInputY + 10*deadzone(wiimote.Down)
+mouse.DirectInputY = mouse.DirectInputY - 10*deadzone(wiimote.up)
+Mouse.LeftButton = Wiimote.A
+Mouse.RightButton = Wiimote.B

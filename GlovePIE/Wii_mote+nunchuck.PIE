@@ -1,0 +1,29 @@
+﻿Mouse.LeftButton = Wiimote.A
+Mouse.RightButton = Wiimote.B
+key.Tab = wiimote.Nunchuk.Z
+key.LeftControl = wiimote.Nunchuk.C
+key.Escape = wiimote.Home
+
+if (Wiimote.Nunchuk.JoyY < -0.1 || Wiimote.Nunchuk.JoyY > 0.1) then
+   mouse.DirectInputY = mouse.DirectInputY + (Wiimote.Nunchuk.JoyY * 25)
+endif
+if (Wiimote.Nunchuk.JoyX < -0.1 || Wiimote.Nunchuk.JoyX > 0.1) then
+   mouse.DirectInputX = mouse.DirectInputX + (Wiimote.Nunchuk.JoyX * 25)
+endif
+
+key.Escape = wiimote.Home
+
+if wiimote.Plus then
+   mouse.WheelUp = true
+   wait 30ms
+   mouse.WheelUp = false
+   wait 30ms
+end if
+if wiimote.Minus then
+   mouse.WheelDown = true
+   wait 30ms
+   mouse.WheelDown = false
+   wait 30ms
+end if
+
+

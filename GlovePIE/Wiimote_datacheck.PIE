@@ -1,0 +1,8 @@
+﻿var.pitch = wiimote.Pitch
+var.roll = wiimote.Roll
+var.yaw = wiimote.Yaw
+var.motionpluspitch = wiimote.MotionPlus.PitchSpeed
+var.motionplusroll = wiimote.MotionPlus.RollSpeed
+var.motionplusyaw = wiimote.MotionPlus.YawSpeed
+wiimote.Rumble = shift
+

@@ -1,0 +1,33 @@
+﻿if wiimote.roll <= -60 then
+   key.A = true
+else
+    key.A = false
+end
+if wiimote.roll >= 60 then
+   key.D = true
+else
+    key.D = false
+end
+
+if wiimote.pitch >= 45 then
+   key.W = true
+else
+    key.W = false
+end
+if wiimote.pitch <= -45 then
+   key.S = true
+else
+    key.S = false
+end
+
+if wiimote.yaw <= -45 then
+   key.Q = true
+else
+    key.Q = false
+end
+
+if wiimote.yaw <= -45 then
+   key.E = true
+else
+    key.E = false
+end

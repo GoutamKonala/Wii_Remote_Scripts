@@ -1,0 +1,70 @@
+﻿
+
+// Mouse Buttons
+mouse.LeftButton = Wiimote.A //and KeepDown(Wiimote.PointerVisible,0.5s)
+mouse.RightButton = Wiimote.B //and KeepDown(Wiimote.PointerVisible,0.5s)
+mouse.MiddleButton = Wiimote.One //and KeepDown(Wiimote.PointerVisible,0.5s)
+
+
+// Mouse Wheel
+if wiimote.Plus then
+mouse.WheelUp = true
+wait 30ms
+mouse.WheelUp = false
+wait 30ms
+end if
+if wiimote.Minus then
+mouse.WheelDown = true
+wait 30ms
+mouse.WheelDown = false
+wait 30ms
+end if
+
+// Keyboard
+key.W = Wiimote.Nunchuk.JoyY < -0.4
+key.S = Wiimote.Nunchuk.JoyY > 0.4
+key.A = Wiimote.Nunchuk.JoyX < -0.4
+key.D = Wiimote.Nunchuk.JoyX > 0.4
+key.Space = wiimote.Nunchuk.Z
+key.LeftControl = wiimote.Nunchuk.C
+key.Tab = wiimote.Down
+key.1 = wiimote.Left
+key.2 = wiimote.Right
+key.Enter = wiimote.Up
+key.LeftShift = wiimote.Two
+key.Escape = wiimote.Home
+
+if wiimote.roll <= -60 then
+   key.A = true
+else
+    key.A = false
+end
+if wiimote.roll >= 60 then
+   key.D = true
+else
+    key.D = false
+end
+
+if wiimote.pitch >= 45 then
+   key.W = true
+else
+    key.W = false
+end
+if wiimote.pitch <= -45 then
+   key.S = true
+else
+    key.S = false
+end
+           /*
+if wiimote.yaw <= -45 then
+   key.Q = true
+else
+    key.Q = false
+end
+
+if wiimote.yaw <= -45 then
+   key.E = true
+else
+    key.E = false
+end
+*/
